@@ -1,12 +1,10 @@
 <script setup lang="ts">
 
+import Sources from '@/components/Sources.vue'
 </script>
 
 <template>
   <h1>B230F Manifold Vacuum</h1>
-  <a href="https://turbobricks.com/index.php?threads/b230f-engine-manifold-vacuum-reference-data-point.301745">
-    https://turbobricks.com/index.php?threads/b230f-engine-manifold-vacuum-reference-data-point.301745
-  </a>
 
   <div>
     <h2>Engine cold (startup), ambient 7degC (46 degF)</h2>
@@ -80,6 +78,15 @@
       </tr>
       </tbody>
     </table>
+
+    <Sources
+      :sources="[
+        {
+          name: 'turbobricks.com',
+          url: 'https://turbobricks.com/index.php?threads/b230f-engine-manifold-vacuum-reference-data-point.301745'
+        }
+      ]"
+    />
   </div>
 </template>
 

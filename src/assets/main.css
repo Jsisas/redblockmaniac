@@ -7,6 +7,22 @@
   font-weight: normal;
 }
 
+h1{
+  padding: 40px 0 8px 0;
+}
+
+h2{
+  padding: 32px 0 8px 0;
+}
+
+h3{
+  padding: 24px 0 8px 0;
+}
+
+p{
+  padding: 16px 0 8px 0;
+}
+
 a,
 .green {
   text-decoration: none;

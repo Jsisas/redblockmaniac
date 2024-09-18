@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Vacuum from '@/components/b230/literature/Vacuum.vue'
-import Test from '@/components/b230/literature/Test.vue'
 import { type Component, ref } from 'vue'
 import Sidenav from '@/components/b230/Sidenav.vue'
+import InjectorEctSensor from '@/components/b230/literature/InjectorEctSensor.vue'
+import O2Sensor from '@/components/b230/literature/O2Sensor.vue'
 
 const selectedComponent: Component = ref(null)
 </script>
@@ -13,7 +14,8 @@ const selectedComponent: Component = ref(null)
     <Sidenav
       :side-nav-objs="[
         { name: 'Vacuum', component: Vacuum },
-        { name: 'Test', component: Test }
+        { name: 'Injector ECT', component: InjectorEctSensor },
+        { name: 'O2 Sensor', component: O2Sensor }
       ]"
       @onNavObjClicked="(item) => (selectedComponent = item.component)"
     ></Sidenav>
