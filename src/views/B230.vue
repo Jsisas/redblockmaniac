@@ -11,8 +11,7 @@ const selectedComponent: Component = ref(null)
 <template>
   <h1>B230</h1>
   <div style="">
-    <Sidenav
-      :side-nav-objs="[
+    <Sidenav :side-nav-objs="[
         { name: 'Vacuum', component: Vacuum },
         { name: 'Injector ECT', component: InjectorEctSensor },
         { name: 'O2 Sensor', component: O2Sensor }

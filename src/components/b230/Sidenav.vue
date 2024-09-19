@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { Component } from 'vue'
 
+interface SideNavObj {
+  name: string,
+  component: Component,
+}
+
 defineProps<{
-  sideNavObjs: [
-    {
-      name: string
-      component: Component
-    }
-  ]
+  sideNavObjs: SideNavObj[]
 }>()
 </script>
 

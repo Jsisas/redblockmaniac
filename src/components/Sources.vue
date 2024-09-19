@@ -1,10 +1,12 @@
 <script setup lang="ts">
 
+interface Source {
+  name: string,
+  url: string,
+}
+
 defineProps<{
-  sources: [{
-    name: string,
-    url: string
-  }]
+  sources: Source[]
 }>()
 </script>
 
