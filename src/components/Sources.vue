@@ -12,13 +12,11 @@ defineProps<{
 
 <template>
   <div>
-    <b>Sources: </b>
+    <b v-if="sources.length > 1">Sources:</b>
+    <b v-else>Source: </b>
     <a v-for="item in sources" v-bind:key="item.url" :href="item.url">{{item.name}}</a>
   </div>
 </template>
 
 <style scoped>
-div {
-  padding-top: 25px;
-}
 </style>

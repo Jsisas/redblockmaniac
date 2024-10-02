@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <nav>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/b230">B230</RouterLink>
-    <RouterLink to="/manuals">Manuals</RouterLink>
+    <RouterLink to="/green_books">Green Books</RouterLink>
   </nav>
   <RouterView />
 </template>
